@@ -1,0 +1,23 @@
+.body {
+  margin-top: 41px;
+}
+.btn {
+  color: #b98000;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.05px;
+  background-color: #ffc74a;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

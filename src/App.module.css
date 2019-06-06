@@ -1,0 +1,10 @@
+.background {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url("./Assets/HeaderBackground/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+}

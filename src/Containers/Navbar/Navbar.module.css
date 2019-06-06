@@ -1,0 +1,33 @@
+.body {
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 5;
+}
+ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  margin-right: 41px;
+  color: #ffffff;
+  text-decoration: none;
+}
+a {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+  color: unset;
+  text-decoration: unset;
+}
+a:focus {
+  outline: 0;
+}
