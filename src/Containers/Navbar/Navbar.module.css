@@ -9,25 +9,25 @@
   justify-content: space-between;
   z-index: 5;
 }
-ul {
+.body ul {
   display: flex;
   align-items: center;
   flex-direction: row;
   list-style-type: none;
 }
 
-li {
+.body li {
   margin-right: 41px;
   color: #ffffff;
   text-decoration: none;
 }
-a {
+.body a {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.45px;
   color: unset;
   text-decoration: unset;
 }
-a:focus {
+.body a:focus {
   outline: 0;
 }

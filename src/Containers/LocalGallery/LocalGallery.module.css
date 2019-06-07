@@ -1,0 +1,38 @@
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: translateY(50%);
+  width: 100%;
+  height: calc(1 / 5 * 100vw);
+  z-index: 5;
+}
+.element {
+  margin: 0 15px;
+  width: 100%;
+  max-height: 433px;
+  max-width: 371px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+.content span {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content span:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffc74a;
+}
