@@ -7,11 +7,13 @@ import classes from "./App.module.css";
 
 function App() {
   return (
-    <div className={classes.background}>
-      <Overlay />
-      <Navbar />
-      <Main />
-      <Gallery />
+    <div>
+      <div className={classes.body}>
+        <Overlay />
+        <Navbar />
+        <Main />
+        <Gallery />
+      </div>
     </div>
   );
 }

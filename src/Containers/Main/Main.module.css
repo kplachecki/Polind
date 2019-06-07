@@ -9,6 +9,7 @@ span {
   font-weight: 700;
 }
 p {
+  margin-top: 0;
   opacity: 0.4;
   color: #ffffff;
   font-size: 16px;
