@@ -38,7 +38,7 @@ class LocalGallery extends Component {
         >
           <div className={classes.content}>
             <span>sopot</span>
-            <span>pomorskies</span>
+            <span>pomorskie</span>
           </div>
         </div>
         <div
