@@ -1,10 +1,20 @@
-.body {
+.mainBody {
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
   background-image: url("./Assets/HeaderBackground/hero-image.jpg");
+  background-color: #343434;
   background-size: cover;
   background-position: center;
+}
+.searchBody {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #f7f7f7;
+  height: 100vh;
+  padding-top: auto;
 }
