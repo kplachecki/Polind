@@ -15,9 +15,8 @@ function App() {
         <Main />
         <LocalGallery />
       </div>
-      <div className={classes.searchBody}>
-        <SearchScreen />
-      </div>
+
+      <SearchScreen />
     </div>
   );
 }
