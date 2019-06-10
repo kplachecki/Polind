@@ -3,7 +3,6 @@ import classes from "./SearchScreen.module.css";
 import InputSearch from "./../../Components/UI/InputSearch/InputSearch";
 import FlickrGallery from "./../FlickrGallery/FlickrGallery";
 import axios from "./../../axios";
-import appKey from "./../../env.json";
 
 class SearchScreen extends Component {
   state = {
@@ -15,7 +14,7 @@ class SearchScreen extends Component {
     this.setState({ userInput: event.target.value }, () => {
       axios
         .get(
-          `/?method=flickr.photos.search&api_key=${appKey.appKey}&text=${
+          `/?method=flickr.photos.search&api_key=${process.env.REACT_APP_API}&text=${
             this.state.userInput
           }&tags=city,poland,miasto,polska&sort=interestingness-desc&media=photos&per_page=6&page=1&format=json&nojsoncallback=1`
         )
