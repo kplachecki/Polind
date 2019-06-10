@@ -1,38 +1,25 @@
-import React from "react";
+import React, { Component } from "react";
 import classes from "./FlickrGallery.module.css";
-import picture from "./../../Assets/Gallery/zakopane.jpg";
 
-const FlickrGallery = () => {
-  return (
-    <div className={classes.content}>
+class FlickrGallery extends Component {
+  render() {
+    let img = null;
+    if (this.props.picJSON) {
+      img = this.props.picJSON.map(pic => {
+        let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${
+          pic.id
+        }_${pic.secret}.jpg`;
+
+        return <img key={pic.id} alt="" src={srcPath} />;
+      });
+    } else return false;
+
+    return (
       <div className={classes.body}>
-        {/* <div>
-        <img src={picture} />
+        <div className={classes.content}>{img}</div>
       </div>
-      <div>
-        <img src={picture} />
-      </div>
-      <div>
-        <img src={picture} />
-      </div>
-      <div>
-        <img src={picture} />
-      </div>
-      <div>
-        <img src={picture} />
-      </div>
-      <div>
-        <img src={picture} />
-      </div> */}
-        <img src={picture} alt="" />
-        <img src={picture} alt="" />
-        <img src={picture} alt="" />
-        <img src={picture} alt="" />
-        <img src={picture} alt="" />
-        <img src={picture} alt="" />
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default FlickrGallery;

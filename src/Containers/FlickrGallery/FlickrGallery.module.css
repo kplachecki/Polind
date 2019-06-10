@@ -1,17 +1,27 @@
 .body {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+}
+.content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 25px;
-  width: 80%;
-}
-.content {
-  display: flex;
-  justify-content: center;
 }
 
 .body img {
   object-fit: cover;
-  width: 100%;
+  width: 300px;
+  height: 300px;
   border-radius: 5px;
+}
+@media (max-height: 850px) {
+  .body img {
+    object-fit: cover;
+    width: 225px;
+    height: 225px;
+    border-radius: 5px;
+  }
 }
