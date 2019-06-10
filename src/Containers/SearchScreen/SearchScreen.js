@@ -4,10 +4,17 @@ import InputSearch from "./../../Components/UI/InputSearch/InputSearch";
 import FlickrGallery from "./../FlickrGallery/FlickrGallery";
 
 class SearchScreen extends Component {
+  state = {
+    userInput: ""
+  };
+
+  onUserInput = event => {
+    this.setState({ userInput: event.target.value });
+  };
   render() {
     return (
       <div className={classes.body}>
-        <InputSearch />
+        <InputSearch onUserInput={this.onUserInput} />
         <FlickrGallery />
       </div>
     );
